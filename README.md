@@ -1,7 +1,9 @@
-# VIMPAC: Video Pre-Training via Masked TokenPrediction and Contrastive Learning
+# VIMPAC: Video Pre-Training via Masked Token Prediction and Contrastive Learning
 
 This is a release of our [VIMPAC paper]() to illustrate the implementations.
 The pretrained checkpoints and scripts will be soon open-sourced in HuggingFace transformers.
+
+Authors: [Hao Tan](https://www.cs.unc.edu/~airsplay/), [Jie Lei](https://www.cs.unc.edu/~jielei/), [Thomas Wolf](https://thomwolf.io/), [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)
 
 ## Data Preprocessing
 Please refer to [video2token](video2token) folder for the detailed README file.
@@ -132,13 +134,16 @@ bash scripts/finetune/small_ssv2.sh 0,1,2,3 --different-shape --clip-len 10 --fr
 ### Large Models
 We provide scripts to run large models. Frame 128:
 ```shell
-bash scripts/large_frame128_ucf101.sh 0,1,2,3
+bash scripts/finetune/large_frame128_ucf101.sh 0,1,2,3
 ```
 Frame 256:
 ```shell
-bash scripts/large_frame256_ucf101.sh 0,1,2,3
+bash scripts/finetune/large_frame256_ucf101.sh 0,1,2,3
 ```
-The input shape could be changed as in [change input shape](#change-the-input-shape).
+The input shape could be changed as in [change input shape](#change-the-input-shape). Our final model use the scripts of:
+```shell
+bash scripts/finetune/large_frame256_ucf101.sh 0,1,2,3 --different-shape --clip-len 10 --frame-rate 4 --frame-size 256 --bs-per-gpu 2
+```
 
 
 ## Acknowledgement
