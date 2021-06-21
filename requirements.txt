@@ -1,0 +1,10 @@
+# Data
+pandas
+lmdb
+
+# Model
+transformers
+DALL-E
+
+# Visualization
+tensorboard
