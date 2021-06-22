@@ -1,6 +1,6 @@
 # VIMPAC: Video Pre-Training via Masked Token Prediction and Contrastive Learning
 
-This is a release of our [VIMPAC paper]() to illustrate the implementations.
+This is a release of our [VIMPAC paper](http://arxiv.org/abs/2106.11250) to illustrate the implementations.
 The pretrained checkpoints and scripts will be soon open-sourced in HuggingFace transformers.
 
 Authors: [Hao Tan](https://www.cs.unc.edu/~airsplay/), [Jie Lei](https://www.cs.unc.edu/~jielei/), [Thomas Wolf](https://thomwolf.io/), [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)
